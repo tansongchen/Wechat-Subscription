@@ -1,0 +1,146 @@
+/* 主题颜色：
+ * 主题色 #ff4
+ * 加深色 #
+ * 减浅色 #
+ * 红移色 #
+ * 蓝移色 #
+ */
+
+/* 全局属性 */
+
+.layout {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif
+}
+
+/* 前言 */
+
+#left {
+  display: inline-block;
+  width: 48%;
+  border-right: 2px solid #ff4;
+  padding: 20px 30px 10px 10px;
+}
+
+#avatar {
+  width: 80%;
+}
+
+#name {
+  border-radius: 10px;
+  text-align: center;
+}
+
+#right {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+#time1, #time2, #time3 {
+  text-align: center;
+}
+
+#time1 {
+  padding: 20px 10px 10px 10px;
+}
+
+#time2 {
+  font-size: 1.5em;
+  color: #FC5;
+  padding: 5px;
+}
+
+/* 标题 */
+
+h1 {
+  border-bottom: 2px solid var(--#ff4);
+  font-size: 1.7em;
+}
+
+h1 span {
+  display: inline-block;
+  font-weight: bold;
+  background: var(--#ff4);
+  color: #FFF;
+  padding: 3px 10px 1px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-right: 3px;
+}
+
+h1:after {
+  display: inline-block;
+  content: " ";
+  vertical-align: bottom;
+  border-bottom: 36px solid #EEE;
+  border-right: 20px solid transparent;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5em;
+  border-bottom: 2px solid #ff4;
+}
+
+h2 span{
+  border-bottom: 2px solid #ff4;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.3em;
+}
+
+/* 特殊规定：
+ * h4 → 摘要
+ * h5 → 强调
+ * h6 → 七句人话
+ * em → 高亮
+ */
+
+h4 {
+  background-color: #;
+}
+
+h5 {
+  border: 2px dashed #FA5;
+  border-radius: 1em;
+  padding: 10px;
+}
+
+h6 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  color: #FA5;
+  border-bottom: 2px solid #FC5;
+}
+
+em {
+  color: #FFF;
+  background: #FA5;
+  font-style: normal;
+  padding: 0 5px;
+}
+
+p {
+  color: #666;
+  padding: 10px;
+}
+
+blockquote {
+  border-left-color: #ff4;
+}
+
+a {
+  color: rgb(239, 112, 96);
+  border-bottom: 1px solid rgb(239, 112, 96);
+}
+
+p code, li code {
+  color: rgb(239, 112, 96);
+}
+
+.footnote-word, .footnote-ref {
+  color: rgb(239, 112, 96);
+}

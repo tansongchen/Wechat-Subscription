@@ -1,0 +1,155 @@
+/* 主题颜色代号：
+ * 主题色 main
+ * 加深色 dark
+ * 减浅色 light
+ * 红移色 redshift
+ * 蓝移色 blueshift
+ */
+
+/* 全局属性 */
+
+.layout {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif
+}
+
+/* 前言 */
+
+#left {
+  display: inline-block;
+  width: 48%;
+  border-right: 2px solid main;
+  padding: 20px 30px 10px 10px;
+}
+
+#avatar {
+  width: 80%;
+}
+
+#name {
+  border-radius: 10px;
+  text-align: center;
+}
+
+#right {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+#time1, #time2, #time3 {
+  text-align: center;
+}
+
+#time1 {
+  padding: 20px 10px 10px 10px;
+}
+
+#time2 {
+  font-size: 1.5em;
+  color: main;
+  padding: 5px;
+}
+
+/* 标题 */
+
+h1 {
+  font-size: 1.7em;
+  font-weight: normal;
+  border-bottom: 2px solid main;
+}
+
+h1 span {
+  display: inline-block;
+  background: main;
+  color: white;
+  padding: 3px 10px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-right: 3px;
+}
+
+h1:after {
+  display: inline-block;
+  content: " ";
+  vertical-align: bottom;
+  border-bottom: 36px solid light;
+  border-right: 20px solid transparent;
+}
+
+h2 {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.5em;
+  border-bottom: 1px solid main;
+}
+
+h2 span{
+  border-bottom: 1px solid main;
+}
+
+h3 {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.3em;
+}
+
+/* 特殊规定：
+ * h4 → 摘要
+ * h5 → 强调
+ * h6 → 七句人话
+ * em → 高亮
+ */
+
+h4 {
+  background-color: light;
+  padding: 10px;
+  color: #333;
+}
+
+h5 {
+  border: 2px dashed blueshift;
+  border-radius: 1em;
+  padding: 10px;
+}
+
+h6 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  color: blueshift;
+  border-bottom: 2px solid blueshift;
+}
+
+em strong {
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  background: blueshift;
+  padding: 0 5px;
+}
+
+/* 其他需要修改的内容 */
+
+strong {
+  color: dark;
+}
+
+p, li {
+  color: #666;
+}
+
+ol, ul {
+  padding-left: 2em;
+}
+
+blockquote {
+  border-left-color: main;
+}
+
+p code, li code {
+  color: main;
+}
+
+.footnote-word, .footnote-ref {
+  color: main;
+}

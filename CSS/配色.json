@@ -1,0 +1,51 @@
+{
+    "赤": {
+        "main": "ff4",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }, 
+    "橙": {
+        "main": "fa2",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }, 
+    "黄": {
+        "main": "fc5",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }, 
+    "绿": {
+        "main": "",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }, 
+    "青": {
+        "main": "",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }, 
+    "蓝": {
+        "main": "6bf",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }, 
+    "紫": {
+        "main": "",
+        "dark": "",
+        "light": "",
+        "redshift": "",
+        "blueshift": ""
+    }
+}
