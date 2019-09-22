@@ -1,9 +1,9 @@
-/* 主题颜色：
- * 主题色 #
- * 加深色 #
- * 减浅色 #
- * 红移色 #
- * 蓝移色 #
+/* 主题颜色代号：
+ * 主题色 hsl(260, 100%, 70%)
+ * 加深色 hsl(260, 80%, 40%)
+ * 减浅色 hsl(260, 100%, 90%)
+ * 红移色 hsl(230, 100%, 70%)
+ * 蓝移色 hsl(290, 100%, 70%)
  */
 
 /* 全局属性 */
@@ -14,81 +14,73 @@
 
 /* 前言 */
 
-#left {
+#frontmatter-left {
   display: inline-block;
-  width: 48%;
-  border-right: 2px solid #;
-  padding: 20px 30px 10px 10px;
+  width: 49%;
+  border-right: 1px solid hsl(260, 100%, 70%);
+  padding: 20px;
 }
 
 #avatar {
-  width: 80%;
+  border-radius: 5px;
 }
 
-#name {
-  border-radius: 10px;
-  text-align: center;
-}
-
-#right {
+#frontmatter-right {
   display: inline-block;
-  width: 48%;
+  width: 49%;
   vertical-align: top;
+  padding: 20px;
 }
 
-#time1, #time2, #time3 {
+#name, #number, #word-count, #time-estimation, #end {
   text-align: center;
 }
 
-#time1 {
-  padding: 20px 10px 10px 10px;
+#number {
+  font-size: 1.7em;
+  color: hsl(260, 100%, 70%);
+  margin: 10px;
 }
 
-#time2 {
-  font-size: 1.5em;
-  color: #FC5;
-  padding: 5px;
+#end {
+  color: #fff;
+  background: hsl(260, 100%, 70%);
+  width: 80%;
+  margin: 10px auto 20px auto;
 }
 
 /* 标题 */
 
 h1 {
-  border-bottom: 2px solid var(--#);
   font-size: 1.7em;
+  font-weight: normal;
+  border-bottom: 2px solid hsl(260, 100%, 70%);
 }
 
 h1 span {
-  display: inline-block;
-  font-weight: bold;
-  background: var(--#);
-  color: #FFF;
-  padding: 3px 10px 1px;
+  background: hsl(260, 100%, 70%);
+  color: white;
+  padding: 3px 10px;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   margin-right: 3px;
 }
 
-h1:after {
-  display: inline-block;
-  content: " ";
-  vertical-align: bottom;
-  border-bottom: 36px solid #EEE;
-  border-right: 20px solid transparent;
-}
-
 h2 {
+  font-weight: normal;
   color: #333;
-  font-size: 1.5em;
-  border-bottom: 2px solid #;
+  font-size: 1.4em;
+  border-bottom: 1px solid hsl(260, 100%, 70%);
 }
 
 h2 span{
-  border-bottom: 2px solid #;
+  border-bottom: 1px solid hsl(260, 100%, 70%);
 }
 
 h3 {
+  font-weight: normal;
   color: #333;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* 特殊规定：
@@ -99,48 +91,111 @@ h3 {
  */
 
 h4 {
-  background-color: #;
+  background-color: hsl(260, 100%, 90%);
+  padding: 10px;
+  color: #333;
 }
 
 h5 {
-  border: 2px dashed #FA5;
+  font-weight: normal;
+  border: 2px dashed hsl(290, 100%, 70%);
   border-radius: 1em;
-  padding: 10px;
+  padding: 20px;
 }
 
 h6 {
   font-size: 1.5em;
   font-weight: normal;
   font-style: italic;
-  color: #FA5;
-  border-bottom: 2px solid #FC5;
+  color: hsl(290, 100%, 70%);
+  border-bottom: 2px solid hsl(290, 100%, 70%);
 }
 
 em {
-  color: #FFF;
-  background: #FA5;
   font-style: normal;
-  padding: 0 5px;
+  font-weight: normal;
+  color: white;
+  background: hsl(290, 100%, 70%);
+  padding: 2px 5px;
 }
 
-p {
+/* 其他需要修改的内容 */
+
+a {
+  color: hsl(260, 100%, 70%);
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: hsl(230, 100%, 70%);
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+hr {
+  width: 90%;
+  margin: 1.5em auto;
+  border-top: 2px dashed hsl(260, 100%, 70%);
+}
+
+strong {
+  color: hsl(260, 80%, 40%);
+}
+
+s {
+  color: #999;
+}
+
+p, li, h4, h5, table tr td {
   color: #666;
-  padding: 10px;
+}
+
+table tr th {
+  color: #333;
+  font-weight: normal;
+}
+
+ol, ul {
+  padding-left: 2em;
 }
 
 blockquote {
-  border-left-color: #;
+  background: #f8f8f8;
+  border-left-color: hsl(260, 100%, 70%);
 }
 
-a {
-  color: rgb(239, 112, 96);
-  border-bottom: 1px solid rgb(239, 112, 96);
+blockquote p {
+  color: #999;
+  padding: 3px 0;
 }
 
 p code, li code {
-  color: rgb(239, 112, 96);
+  color: hsl(260, 100%, 70%);
+}
+
+sup {
+  line-height: 0;
 }
 
 .footnote-word, .footnote-ref {
-  color: rgb(239, 112, 96);
+  font-weight: normal;
+  color: hsl(230, 100%, 70%);
+}
+
+.footnotes-sep {
+  font-family: inherit;
+}
+
+.footnote-num {
+  font-family: inherit;
+}
+
+.footnote-item p {
+  color: #666;
+}
+
+.footnote-item p em {
+  color: #999;
+  background: transparent;
 }

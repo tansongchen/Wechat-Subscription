@@ -2,8 +2,8 @@
  * 主题色 main
  * 加深色 dark
  * 减浅色 light
- * 红移色 redshift
- * 蓝移色 blueshift
+ * 红移色 unhue
+ * 蓝移色 hue
  */
 
 /* 全局属性 */
@@ -14,40 +14,39 @@
 
 /* 前言 */
 
-#left {
+#frontmatter-left {
   display: inline-block;
-  width: 48%;
-  border-right: 2px solid main;
-  padding: 20px 30px 10px 10px;
+  width: 49%;
+  border-right: 1px solid main;
+  padding: 20px;
 }
 
 #avatar {
-  width: 80%;
+  border-radius: 5px;
 }
 
-#name {
-  border-radius: 10px;
-  text-align: center;
-}
-
-#right {
+#frontmatter-right {
   display: inline-block;
-  width: 48%;
+  width: 49%;
   vertical-align: top;
+  padding: 20px;
 }
 
-#time1, #time2, #time3 {
+#name, #number, #word-count, #time-estimation, #end {
   text-align: center;
 }
 
-#time1 {
-  padding: 20px 10px 10px 10px;
+#number {
+  font-size: 1.7em;
+  color: main;
+  margin: 10px;
 }
 
-#time2 {
-  font-size: 1.5em;
-  color: main;
-  padding: 5px;
+#end {
+  color: #fff;
+  background: main;
+  width: 80%;
+  margin: 10px auto 20px auto;
 }
 
 /* 标题 */
@@ -59,7 +58,6 @@ h1 {
 }
 
 h1 span {
-  display: inline-block;
   background: main;
   color: white;
   padding: 3px 10px;
@@ -68,18 +66,10 @@ h1 span {
   margin-right: 3px;
 }
 
-h1:after {
-  display: inline-block;
-  content: " ";
-  vertical-align: bottom;
-  border-bottom: 36px solid light;
-  border-right: 20px solid transparent;
-}
-
 h2 {
   font-weight: normal;
   color: #333;
-  font-size: 1.5em;
+  font-size: 1.4em;
   border-bottom: 1px solid main;
 }
 
@@ -90,7 +80,7 @@ h2 span{
 h3 {
   font-weight: normal;
   color: #333;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* 特殊规定：
@@ -107,35 +97,63 @@ h4 {
 }
 
 h5 {
-  border: 2px dashed blueshift;
+  font-weight: normal;
+  border: 2px dashed hue;
   border-radius: 1em;
-  padding: 10px;
+  padding: 20px;
 }
 
 h6 {
   font-size: 1.5em;
   font-weight: normal;
   font-style: italic;
-  color: blueshift;
-  border-bottom: 2px solid blueshift;
+  color: hue;
+  border-bottom: 2px solid hue;
 }
 
-em strong {
+em {
   font-style: normal;
   font-weight: normal;
   color: white;
-  background: blueshift;
-  padding: 0 5px;
+  background: hue;
+  padding: 2px 5px;
 }
 
 /* 其他需要修改的内容 */
+
+a {
+  color: main;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: unhue;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+hr {
+  width: 90%;
+  margin: 1.5em auto;
+  border-top: 2px dashed main;
+}
 
 strong {
   color: dark;
 }
 
-p, li {
+s {
+  color: #999;
+}
+
+p, li, h4, h5, table tr td {
   color: #666;
+}
+
+table tr th {
+  color: #333;
+  font-weight: normal;
 }
 
 ol, ul {
@@ -143,13 +161,41 @@ ol, ul {
 }
 
 blockquote {
+  background: #f8f8f8;
   border-left-color: main;
+}
+
+blockquote p {
+  color: #999;
+  padding: 3px 0;
 }
 
 p code, li code {
   color: main;
 }
 
+sup {
+  line-height: 0;
+}
+
 .footnote-word, .footnote-ref {
-  color: main;
+  font-weight: normal;
+  color: unhue;
+}
+
+.footnotes-sep {
+  font-family: inherit;
+}
+
+.footnote-num {
+  font-family: inherit;
+}
+
+.footnote-item p {
+  color: #666;
+}
+
+.footnote-item p em {
+  color: #999;
+  background: transparent;
 }

@@ -1,51 +1,51 @@
 {
     "赤": {
-        "main": "ff4",
-        "dark": "",
-        "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "main": "f44",
+        "dark": "a11",
+        "light": "f99",
+        "hue": "fa4",
+        "unhue": "b39"
     }, 
     "橙": {
         "main": "fa2",
-        "dark": "",
-        "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "dark": "a61",
+        "light": "fc8",
+        "hue": "f62",
+        "unhue": "fd2"
     }, 
     "黄": {
         "main": "fc5",
-        "dark": "",
-        "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "dark": "a72",
+        "light": "fd9",
+        "hue": "fe5",
+        "unhue": "f95"
     }, 
     "绿": {
         "main": "",
         "dark": "",
         "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "hue": "",
+        "unhue": ""
     }, 
     "青": {
         "main": "",
         "dark": "",
         "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "hue": "",
+        "unhue": ""
     }, 
     "蓝": {
         "main": "6bf",
-        "dark": "",
-        "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "dark": "26a",
+        "light": "adf",
+        "hue": "77f",
+        "unhue": "5fb"
     }, 
     "紫": {
         "main": "",
         "dark": "",
         "light": "",
-        "redshift": "",
-        "blueshift": ""
+        "hue": "",
+        "unhue": ""
     }
 }
