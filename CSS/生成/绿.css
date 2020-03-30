@@ -70,7 +70,7 @@
   border-bottom: 2px solid hsl(88, 70%, 62%);
 }
 
-#nice h1 span {
+#nice h1 span.content {
   background: hsl(88, 70%, 62%);
   color: white;
   padding: 3px 10px;
@@ -86,7 +86,7 @@
   border-bottom: 1px solid hsl(88, 70%, 62%);
 }
 
-#nice h2 span {
+#nice h2 span.content {
   border-bottom: 1px solid hsl(88, 70%, 62%);
 }
 

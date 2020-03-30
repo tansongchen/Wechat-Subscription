@@ -70,7 +70,7 @@
   border-bottom: 2px solid main;
 }
 
-#nice h1 span {
+#nice h1 span.content {
   background: main;
   color: white;
   padding: 3px 10px;
@@ -86,7 +86,7 @@
   border-bottom: 1px solid main;
 }
 
-#nice h2 span {
+#nice h2 span.content {
   border-bottom: 1px solid main;
 }
 
